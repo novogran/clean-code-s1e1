@@ -16,7 +16,6 @@
 .more-inf {
   font-family: fantasy, cursive;
 }
-
 @media (max-width: 768px) {
   .more-inf-sec { 
     text-align: center;
@@ -85,7 +84,6 @@ input[type="text"] {
 input[type="text"]:focus {
   color: #333;
 }
-
 /* New Task */
 label[for="new-task"] {
   display: block;
@@ -94,13 +92,11 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-
 /* Task list */
 #tasks-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +104,6 @@ label[for="new-task"] {
 #tasks-list-item > * {
   vertical-align: middle;
 }
-
 #tasks-list-item > input[type="checkbox"] {
   margin: 0 10px;
 }
@@ -129,27 +124,23 @@ label[for="new-task"] {
 .del-btn-img:hover {
   transform: rotateZ(0);
 }
-
 /* Completed */
 #compl-tasks
 label {
   text-decoration: line-through;
   color: #888;
 }
-
 /* Edit Task */
 ul
 li
 input[type=text] {
   display: none;
 }
-
 .edit-mode
 input[type=text] {
   display: inline-block;
   width: 224px;
 }
-
 .edit-mode
 label {
   display: none;
