@@ -32,6 +32,8 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.id="tasks-list-item";
+
     label.innerText=taskString;
     label.className='task';
 
@@ -42,8 +44,11 @@ var createNewTaskElement=function(taskString){
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit-btn";
+    editButton.id="list-item-btn";
 
     deleteButton.className="del-btn";
+    deleteButton.id="list-item-btn";
+    deleteButtonImg.className="del-btn-img";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
