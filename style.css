@@ -18,7 +18,8 @@
 }
 
 @media (max-width:768px) {
-  .more-inf-sec { text-align: center;
+  .more-inf-sec { 
+    text-align: center;
 }
 }
 .main-page-sec {
@@ -38,10 +39,12 @@
   margin: 0;
   padding: 0px;
 }
-#tasks-list-item, .sec-title {
+#tasks-list-item,
+.sec-title {
   list-style: none;
 }
-input,#list-item-btn{
+input,
+#list-item-btn{
   outline: none;
 }
 #list-item-btn {
@@ -128,21 +131,26 @@ label[for="new-task"] {
 }
 
 /* Completed */
-#compl-tasks label {
+#compl-tasks
+label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul
+li
+input[type=text] {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode
+input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.edit-mode
+label {
   display: none;
 }
