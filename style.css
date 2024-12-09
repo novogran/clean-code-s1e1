@@ -4,37 +4,38 @@
   color: #333;
   font-family: lato, sans-serif;
 }
-.more-inf-sec {
+.more-inf {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.more-inf-img {
+.more-inf__img {
   width: 100%;
 }
-.more-inf {
+.more-inf__link {
   font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
-  .more-inf-sec { 
+  .more-inf { 
     text-align: center;
 }
 }
-.main-page-sec {
+.tasks {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task-form,
+.task-lbl {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrap {
+.add__cont {
   display: flex;
 }
-.tasks-list {
+.tasks__list {
   margin: 0;
   padding: 0px;
 }
@@ -43,10 +44,10 @@
   list-style: none;
 }
 input,
-#list-item-btn{
+#task-btn{
   outline: none;
 }
-#list-item-btn {
+#task-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -55,12 +56,12 @@ input,
   font-family: lato, sans-serif;
   cursor: pointer;
 }
-#list-item-btn:hover {
+#task-btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
 .sec-title,
-label[for="new-task"] {
+.add__lbl {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -69,7 +70,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task-form {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,11 +82,10 @@ input[type="text"] {
   font-family: lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task-form:focus {
   color: #333;
 }
-/* New Task */
-label[for="new-task"] {
+.add__lbl {
   display: block;
   margin: 0 0 20px;
 }
@@ -104,44 +104,44 @@ label[for="new-task"] {
 #tasks-list-item > * {
   vertical-align: middle;
 }
-#tasks-list-item > input[type="checkbox"] {
+.task-checkbox {
   margin: 0 10px;
 }
-#tasks-list-item > label {
+.task-lbl {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-#tasks-list-item > input[type="text"] {
+.task-form {
   width: 226px;
 }
-.del-btn-img {
+.del-btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.del-btn-img:hover {
+.del-btn__img:hover {
   transform: rotateZ(0);
 }
 /* Completed */
 #compl-tasks
-label {
+.task-lbl {
   text-decoration: line-through;
   color: #888;
 }
 /* Edit Task */
 ul
 li
-input[type=text] {
+.task-form {
   display: none;
 }
 .edit-mode
-input[type=text] {
+.task-form {
   display: inline-block;
   width: 224px;
 }
 .edit-mode
-label {
+.task-lbl {
   display: none;
 }
